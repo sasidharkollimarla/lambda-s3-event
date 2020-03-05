@@ -3,11 +3,11 @@ variable "lambda_function_name" {
 }
 
 locals {
-  s3bucketarn = "arn:aws:s3:::terraform-mvh-sasi"
+  s3bucketarn = "arn:aws:s3:::terraform-mvh-sasiveni"
 }
 
 resource "aws_s3_bucket" "lambda_trigger_bucket" {
-  bucket = "terraform-mvh-sasi"
+  bucket = "terraform-mvh-sasiveni"
 }
 
 resource "aws_iam_role" "iam_for_lambda" {
